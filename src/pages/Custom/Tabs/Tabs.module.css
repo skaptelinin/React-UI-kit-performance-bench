@@ -1,0 +1,21 @@
+.tabs-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.tabs-list {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.item {
+    padding: 4px 8px;
+    cursor: pointer;
+}
+
+.item.chosen {
+    color: #0a53be;
+}

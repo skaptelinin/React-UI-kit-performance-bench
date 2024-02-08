@@ -1,0 +1,9 @@
+.header {
+    display: flex;
+    gap: 12px;
+    padding: 16px;
+}
+
+.main {
+    padding: 16px;
+}
