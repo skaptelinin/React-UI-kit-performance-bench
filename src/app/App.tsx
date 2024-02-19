@@ -1,7 +1,7 @@
 import { BrowserRouter, Link, Routes, Route } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-import { Ant, Custom, Chakra, Mui, Bootstrap } from '../pages';
+import { Ant, Custom, Chakra, Mui, Bootstrap, Home } from '../pages';
 import styles from './App.module.css';
 
 enum ROUTES {
@@ -42,7 +42,7 @@ const App = () => (
                 <Route path={ROUTES.chakra} element={<Chakra />} />
                 <Route path={ROUTES.bootstrap} element={<Bootstrap />} />
                 <Route path={ROUTES.custom} element={<Custom />} />
-                <Route path={ROUTES.home} element={<></>} />
+                <Route path={ROUTES.home} element={<Home />} />
             </Routes>
         </main>
     </BrowserRouter>

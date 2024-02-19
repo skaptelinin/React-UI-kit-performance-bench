@@ -3,3 +3,4 @@ export { Ant } from './Ant';
 export { Chakra } from './Chakra';
 export { Custom } from './Custom';
 export { Bootstrap } from './Bootstrap';
+export { Home } from './Home';

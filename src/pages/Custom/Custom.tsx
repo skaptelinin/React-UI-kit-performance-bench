@@ -1,5 +1,4 @@
-import { FrameworkPage } from '../../features';
-import { Tabs } from './Tabs';
+import { FrameworkPage, Tabs } from '../../features';
 import { Buttons } from './Buttons.tsx';
 import { Typographies } from './Typographies.tsx';
 

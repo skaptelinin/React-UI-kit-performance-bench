@@ -1,5 +1,5 @@
-import type { FC, ReactNode } from 'react';
 import { useState } from 'react';
+import type { FC, ReactNode } from 'react';
 
 import styles from './Tabs.module.css';
 
@@ -11,7 +11,7 @@ interface Tab {
 
 export const Tabs: FC<{ items: Tab[] }> = ({ items }) => {
     const [tab, setTab] = useState(() => items?.[0]?.key);
-    console.log('styles are', styles);
+
     const tabContent = items?.find(({ key }) => key === tab)?.children;
 
     return (
