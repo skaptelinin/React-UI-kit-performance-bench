@@ -2,9 +2,10 @@ import type { FC } from 'react';
 
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
 
-import { Article } from '../Article';
-import { MOCK_PAGES } from '../mockPages.ts';
+import { Article } from '../../../features';
 import { useToggleTransition } from '../../../shared';
+
+import { MOCK_PAGES } from '../mockPages.ts';
 import './styles.css';
 
 export const FadeSwitchTransition: FC = () => {
@@ -13,7 +14,7 @@ export const FadeSwitchTransition: FC = () => {
     const props = flag ? MOCK_PAGES[0] : MOCK_PAGES[1];
 
     return (
-        <div style={{ padding: '20px' }}>
+        <div>
             <button onClick={toggleTransition}>
                 Toggle
             </button>

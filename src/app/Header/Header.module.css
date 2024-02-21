@@ -1,0 +1,12 @@
+.header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 16px;
+
+    .logo {
+        width: 30px;
+        height: 30px;
+        background-image: url("../../assets/icons/vite.svg");
+    }
+}

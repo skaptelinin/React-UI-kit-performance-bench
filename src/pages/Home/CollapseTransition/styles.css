@@ -1,0 +1,41 @@
+.collapsible-article {
+    height: 400px;
+
+    &.collapse-exit {
+        /*height: 400px;*/
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    &.collapse-enter {
+        height: 0;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+    &.collapse-enter-active {
+        /*height: 400px;*/
+        /*height: auto;*/
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    &.collapse-exit-active {
+        height: 0;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+    &.collapse-exit-active {
+        /*transition: height 700ms ease-out, padding-top 700ms ease-out, padding-bottom 700ms ease-out;*/
+        transition: height 7000ms ease-out;
+        overflow: hidden;
+    }
+
+    &.collapse-enter-active {
+        /*transition: height 700ms ease-out, padding-top 700ms ease-out, padding-bottom 700ms ease-out;*/
+        transition: height 7000ms ease-out;
+        overflow: hidden;
+    }
+
+}
