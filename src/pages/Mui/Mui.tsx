@@ -3,9 +3,9 @@ import type { FC, SyntheticEvent } from 'react';
 
 import { Tabs, Tab } from '@mui/material';
 
-import { FrameworkPage } from '../../features';
-import { Buttons } from './Buttons.tsx';
-import { Typographies } from './Typographies.tsx';
+import { FrameworkPage } from '@/features';
+
+import { Typographies, Buttons } from './_widgets';
 import styles from './Mui.module.css';
 
 enum TabsType {

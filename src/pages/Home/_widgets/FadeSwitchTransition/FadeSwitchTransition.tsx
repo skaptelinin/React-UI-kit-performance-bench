@@ -2,10 +2,10 @@ import type { FC } from 'react';
 
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
 
-import { Article } from '../../../features';
-import { useToggleTransition } from '../../../shared';
+import { Article } from '@/features';
+import { useToggleTransition } from '@/shared';
 
-import { MOCK_PAGES } from '../mockPages.ts';
+import { MOCK_PAGES } from '../../_entities';
 import './styles.css';
 
 export const FadeSwitchTransition: FC = () => {

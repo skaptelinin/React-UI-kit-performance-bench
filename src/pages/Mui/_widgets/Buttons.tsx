@@ -1,6 +1,6 @@
 import { Button } from '@mui/material';
 
-import { List } from '../../features/List/List.tsx';
+import { List } from '@/features';
 
 export const Buttons = () => (
     <List

@@ -1,5 +1,6 @@
-import { List } from '../../features';
-import { Button } from './Button';
+import { List } from '@/features';
+
+import { Button } from '../_shared';
 
 export const Buttons = () => (
     <List

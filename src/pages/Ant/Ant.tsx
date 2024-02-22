@@ -2,9 +2,9 @@ import { FC } from 'react';
 
 import { Tabs } from 'antd';
 
-import { FrameworkPage } from '../../features';
-import { Buttons } from './Buttons.tsx';
-import { Typographies } from './Typographies.tsx';
+import { FrameworkPage } from '@/features';
+
+import { Buttons, Typographies } from './_widgets';
 
 const Ant: FC = () => (
     <Tabs

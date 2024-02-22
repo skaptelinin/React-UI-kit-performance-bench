@@ -1,7 +1,6 @@
 import type { FC } from 'react';
 
-import { FadeSwitchTransition } from './FadeSwitchTransition';
-import { CollapseTransition } from './CollapseTransition';
+import { FadeSwitchTransition, CollapseTransition } from './_widgets';
 import styles from './Home.module.css';
 
 export const Home: FC = () => {

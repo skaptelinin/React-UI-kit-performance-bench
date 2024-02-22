@@ -1,6 +1,6 @@
 import type { FC, ReactNode } from 'react';
 
-import { NUM_ARRAY } from '../../shared';
+import { NUM_ARRAY } from '@/shared';
 import styles from './List.module.css';
 
 export const List: FC<{ render: () => ReactNode }> = ({ render }) => (

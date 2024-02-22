@@ -2,7 +2,7 @@ import type { FC } from 'react';
 
 import { Link } from 'react-router-dom';
 
-import { ROUTES } from '../../shared';
+import { ROUTES } from '@/entities';
 import styles from './Header.module.css';
 
 const MAP_ROUTE_TO_TITLE: Record<ROUTES, string> = {

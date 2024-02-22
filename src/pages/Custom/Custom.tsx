@@ -1,6 +1,6 @@
-import { FrameworkPage, Tabs } from '../../features';
-import { Buttons } from './Buttons.tsx';
-import { Typographies } from './Typographies.tsx';
+import { FrameworkPage, Tabs } from '@/features';
+
+import { Buttons, Typographies } from './_widgets';
 
 const Custom = () => (
     <Tabs

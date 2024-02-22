@@ -1,8 +1,9 @@
 import type { FC } from 'react';
 
-import { List } from '../../features';
-import { Typography } from './Typography';
-import { LOREM_IPSUM } from '../../shared';
+import { Typography } from '@mui/material';
+
+import { List } from '@/features';
+import { LOREM_IPSUM } from '@/shared';
 
 export const Typographies: FC = () => (
     <List

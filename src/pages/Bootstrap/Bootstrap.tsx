@@ -3,8 +3,9 @@ import type { FC } from 'react';
 import Tab from 'react-bootstrap/Tab';
 import Tabs from 'react-bootstrap/Tabs';
 
-import { FrameworkPage } from '../../features';
-import { Buttons } from './Buttons.tsx';
+import { FrameworkPage } from '@/features';
+
+import { Buttons } from './_widgets';
 
 const Bootstrap: FC = () => (
     <Tabs unmountOnExit>

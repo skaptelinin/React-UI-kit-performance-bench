@@ -9,9 +9,9 @@ import {
     TabList,
 } from '@chakra-ui/react';
 
-import { Buttons } from './Buttons.tsx';
-import { FrameworkPage } from '../../features';
-import { Typographies } from './Typographies.tsx';
+import { FrameworkPage } from '@/features';
+
+import { Buttons, Typographies } from './_widgets';
 
 const Chakra: FC = () => (
     <ChakraProvider>

@@ -8,8 +8,8 @@ import {
     Mui,
     Bootstrap,
     Home,
-} from '../pages';
-import { ROUTES } from '../shared';
+} from '@/pages';
+import { ROUTES } from '@/entities';
 
 import { Header } from './Header';
 import styles from './App.module.css';

@@ -2,8 +2,8 @@ import type { FC } from 'react';
 
 import { CSSTransition } from 'react-transition-group';
 
-import { Article } from '../../../features';
-import { LOREM_IPSUM, useToggleTransition } from '../../../shared';
+import { Article } from '@/features';
+import { LOREM_IPSUM, useToggleTransition } from '@/shared';
 
 import './styles.css';
 
@@ -17,8 +17,7 @@ export const CollapseTransition: FC = () => {
             </button>
             <CSSTransition
                 in={flag}
-                // timeout={700}
-                timeout={7000}
+                timeout={700}
                 classNames="collapse"
                 unmountOnExit
             >
