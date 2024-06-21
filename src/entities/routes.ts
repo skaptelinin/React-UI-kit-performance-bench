@@ -5,4 +5,5 @@ export enum ROUTES {
     bootstrap = 'bootstrap',
     custom = 'custom',
     home = '/',
+    interview = 'interview'
 }

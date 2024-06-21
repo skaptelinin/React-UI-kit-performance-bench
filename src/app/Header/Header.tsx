@@ -12,6 +12,7 @@ const MAP_ROUTE_TO_TITLE: Record<ROUTES, string> = {
     [ROUTES.bootstrap]: 'Bootstrap',
     [ROUTES.custom]: 'Custom UI-kit',
     [ROUTES.home]: 'Back',
+    [ROUTES.interview]: 'Interview',
 }
 
 export const Header: FC = () => (
