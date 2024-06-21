@@ -18,7 +18,7 @@ export const Header: FC = () => (
     <header className={styles.header}>
         <span className={styles.logo} />
         {Object.entries(MAP_ROUTE_TO_TITLE).map(([route, title]) => (
-            <Link to={route}>
+            <Link to={route} key={route}>
                 {title}
             </Link>
         ))}

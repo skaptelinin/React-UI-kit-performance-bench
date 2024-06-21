@@ -1,4 +1,4 @@
-import type { FC } from 'react';
+import { FC, useState } from 'react';
 
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
 
@@ -9,20 +9,26 @@ import { MOCK_PAGES } from '../../_entities';
 import './styles.css';
 
 export const FadeSwitchTransition: FC = () => {
-    const { flag, nodeRef, toggleTransition } = useToggleTransition<HTMLDivElement>();
+    const [counter, setCounter] = useState<number>(0);
+    const { nodeRef, toggleTransition } = useToggleTransition<HTMLDivElement>();
 
-    const props = flag ? MOCK_PAGES[0] : MOCK_PAGES[1];
+    const props = MOCK_PAGES[counter % MOCK_PAGES.length];
+
+    const handleClick = () => {
+        setCounter((prevState) => ++prevState);
+        toggleTransition();
+    };
 
     return (
         <div>
-            <button onClick={toggleTransition}>
+            <button onClick={handleClick}>
                 Toggle
             </button>
             <TransitionGroup
                 className="container-wrapper"
             >
                 <CSSTransition
-                    key={String(flag)}
+                    key={String(counter)}
                     nodeRef={nodeRef}
                     classNames="fade"
                     addEndListener={(done) => {
