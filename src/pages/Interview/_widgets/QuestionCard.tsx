@@ -1,7 +1,6 @@
 import { FC, ReactNode } from 'react';
 
-
-const QuestionCard: FC<{ title: string, children: ReactNode }> = ({
+export const QuestionCard: FC<{ title: string, children: ReactNode }> = ({
     title, children
 }) => (
     <div>
@@ -9,5 +8,3 @@ const QuestionCard: FC<{ title: string, children: ReactNode }> = ({
         {children}
     </div>
 );
-
-export default QuestionCard;

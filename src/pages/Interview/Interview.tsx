@@ -1,9 +1,17 @@
 import { type FC } from 'react';
 
-const Interview: FC = () => (
-    <h1>
-        Interview
-    </h1>
-);
+import { QuestionCard, UnexpectedUnmount, Performance } from './_widgets';
 
-export default Interview;
+export const Interview: FC = () => (
+    <>
+        <h1>
+            Interview
+        </h1>
+        <QuestionCard title="Unexpected unmount">
+            <UnexpectedUnmount />
+        </QuestionCard>
+        <QuestionCard title="Render performance comparison">
+            <Performance />
+        </QuestionCard>
+    </>
+);

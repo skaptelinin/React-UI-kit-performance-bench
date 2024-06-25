@@ -8,6 +8,7 @@ import {
     Mui,
     Bootstrap,
     Home,
+    Interview,
 } from '@/pages';
 import { ROUTES } from '@/entities';
 
@@ -25,6 +26,7 @@ const App = () => (
                 <Route path={ROUTES.bootstrap} element={<Bootstrap />} />
                 <Route path={ROUTES.custom} element={<Custom />} />
                 <Route path={ROUTES.home} element={<Home />} />
+                <Route path={ROUTES.interview} element={<Interview />} />
             </Routes>
         </main>
     </BrowserRouter>
