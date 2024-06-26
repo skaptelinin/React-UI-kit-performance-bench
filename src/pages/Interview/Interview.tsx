@@ -1,6 +1,6 @@
 import { type FC } from 'react';
 
-import { QuestionCard, UnexpectedUnmount, Performance } from './_widgets';
+import { QuestionCard, UnexpectedUnmount, Performance, RenderCycle } from './_widgets';
 
 export const Interview: FC = () => (
     <>
@@ -12,6 +12,9 @@ export const Interview: FC = () => (
         </QuestionCard>
         <QuestionCard title="Render performance comparison">
             <Performance />
+        </QuestionCard>
+        <QuestionCard title="Render cycle">
+            <RenderCycle />
         </QuestionCard>
     </>
 );
